@@ -1,26 +1,62 @@
-# 📦 Sourcing Analysis Dashboard
+# 📊 Sourcing Analysis Dashboard
 
-This project analyzes software vendor spend and contract data using SQL and Power BI to uncover sourcing insights and support strategic procurement decisions.
+This Power BI dashboard provides a visual overview of software contract spending and vendor relationships. It supports sourcing, procurement, and IT teams in identifying cost-saving opportunities, optimizing vendor partnerships, and tracking licensing trends.
 
-## 📂 Project Overview
-
-Organizations often face challenges managing software contracts across various vendors. This project was created to demonstrate how data analytics and visualization tools can streamline sourcing decisions, identify cost-saving opportunities, and monitor vendor performance over time.
+![Dashboard Preview](./dashboard_screenshot.png)
 
 ---
 
-## 🧮 SQL Analysis
+## 🛠️ Project Overview
 
-SQL scripts were used to clean, aggregate, and analyze the underlying data, answering key questions such as:
+This dashboard was built using data modeled in SQL and visualized in Power BI. It combines multiple KPIs, trend charts, and filters to help answer key sourcing questions.
 
-- 💰 What is the total spend per vendor?
-- 📅 How does spend trend over time?
-- 🔁 What’s the difference between original contract costs vs. renewal costs?
-- ✅ Which vendors are marked as preferred?
+---
 
-Sample SQL logic includes:
+## 📌 Key Features
 
-```sql
--- Example: Calculate total spend per vendor
-SELECT vendor_id, SUM(amount_spent) AS total_spend
-FROM spend_records
-GROUP BY vendor_id;
+- **💰 Total Spend KPI** – Tracks overall contract expenditure
+- **📦 Average Spend per Vendor** – Evaluates vendor-specific spending levels
+- **🤝 Preferred Vendor Rate** – Monitors preferred contract usage rate
+- **🏆 Top 5 Vendors by Contract Spend** – Highlights top vendors by spend
+- **📄 Contracts by License Type** – Breaks down contract types (e.g., per-seat, enterprise)
+- **🔁 Original vs. Renewal Cost** – Compares initial vs renewal contract costs
+- **📆 Monthly Spend Trend** – Visualizes monthly software spend patterns
+- **📂 Interactive Slicer** – Enables filtering by contract year or vendor name
+
+---
+
+## 📂 Folder Contents
+
+| File                        | Description                                   |
+|-----------------------------|-----------------------------------------------|
+| `sourcing_dashboard.pbix`   | Power BI dashboard file                       |
+| `dashboard_screenshot.png`  | Preview image used in this README             |
+| `raw_data.csv` *(optional)* | Cleaned contract data source                  |
+| `SQL_scripts.sql` *(optional)* | SQL queries used for data prep          |
+
+---
+
+## 🚀 How to Use
+
+1. Clone or download this repository  
+2. Open `sourcing_dashboard.pbix` in Power BI Desktop  
+3. Connect your own sourcing or software spend dataset  
+4. Explore, customize, or enhance the visuals to fit your needs  
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Power BI dashboard design
+- SQL data preparation
+- DAX for custom KPIs
+- Vendor and spend analysis
+- GitHub project documentation
+
+---
+
+## 🔗 GitHub Repository
+
+[https://github.com/eileennieves/sourcing-analysis-dashboard](https://github.com/eileennieves/sourcing-analysis-dashboard)
+
+---
