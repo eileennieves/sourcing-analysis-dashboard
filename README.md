@@ -3,7 +3,7 @@
 This Power BI dashboard provides a visual overview of software contract spending and vendor relationships. It supports sourcing, procurement, and IT teams in identifying cost-saving opportunities, optimizing vendor partnerships, and tracking licensing trends.
 
 <img width="1683" height="973" alt="image" src="https://github.com/user-attachments/assets/c9f0c46f-658b-4aac-93c2-6ff419c6e3bc" />
-![Power BI Dashboard Preview](dashboard_screenshot.png)
+
 
 ---
 
