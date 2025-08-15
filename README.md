@@ -1,17 +1,26 @@
-# Sourcing Analysis Dashboard
+# 📦 Sourcing Analysis Dashboard
 
-This project analyzes IT vendor sourcing and contract spend to help identify cost-saving opportunities and streamline procurement decisions.
+This project analyzes software vendor spend and contract data using SQL and Power BI to uncover sourcing insights and support strategic procurement decisions.
 
-## 📁 Structure
-- `/sql/`: SQL scripts for database schema, data modeling, and spend analysis
-- `/powerbi/`: Power BI dashboard file (coming soon)
-- `/data/`: Sample or anonymized data (coming soon)
+## 📂 Project Overview
 
-## 🛠 Tools Used
-- SQL (MySQL-style)
-- Power BI (DAX, data modeling)
-- Excel (Power Query)
+Organizations often face challenges managing software contracts across various vendors. This project was created to demonstrate how data analytics and visualization tools can streamline sourcing decisions, identify cost-saving opportunities, and monitor vendor performance over time.
 
-## 🚧 In Progress
-- Power BI dashboard visualizations
-- Sample data upload
+---
+
+## 🧮 SQL Analysis
+
+SQL scripts were used to clean, aggregate, and analyze the underlying data, answering key questions such as:
+
+- 💰 What is the total spend per vendor?
+- 📅 How does spend trend over time?
+- 🔁 What’s the difference between original contract costs vs. renewal costs?
+- ✅ Which vendors are marked as preferred?
+
+Sample SQL logic includes:
+
+```sql
+-- Example: Calculate total spend per vendor
+SELECT vendor_id, SUM(amount_spent) AS total_spend
+FROM spend_records
+GROUP BY vendor_id;
